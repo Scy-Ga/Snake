@@ -7,6 +7,51 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="200"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" 
+                Content="Pontszám:" 
+                   />
+            <Label Grid.Row="1" 
+                Content="Megevett Étel:" 
+                   />
+            <Label Grid.Row="2" 
+                Content="Kígyó hossza:" 
+                   />
+            <Label Grid.Row="3" 
+                Content="eltelt idő" 
+                   />
+
+            <Button Grid.Row="4"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Bottom"
+                    Content="Start"
+                    Margin="10"
+                    Padding="10"/>
+
+            <Button Grid.Row="4"
+                    HorizontalAlignment="right"
+                    VerticalAlignment="Bottom"
+                    Content="stop"
+                    Margin="10"
+                    Padding="10"/>
+
+        </Grid>
+
+        <Grid Grid.Column="0" Background="#FFD7E8E8" Margin="10">
+            
+        </Grid>
+            
     </Grid>
 </Window>
