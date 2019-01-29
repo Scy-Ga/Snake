@@ -44,4 +44,7 @@ specifikáció
 
 
 
+
 	''' 
+# Timer paraméterei
+   GameTimer = new DispatcherTimer(TimeSpan.FromMilliseconds(100), DispatcherPriority.Normal, ItIsTimeForShow(), Application.Current.Dispatcher);

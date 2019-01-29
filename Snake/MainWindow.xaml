@@ -33,19 +33,21 @@
                 Content="eltelt idő" 
                    />
 
-            <Button Grid.Row="4"
+            <Button x:Name="ButtonStart"
+                Grid.Row="4"
                     HorizontalAlignment="Left"
                     VerticalAlignment="Bottom"
                     Content="Start"
                     Margin="10"
-                    Padding="10"/>
+                    Padding="10" Click="ButtonStart_Click"/>
 
-            <Button Grid.Row="4"
+            <Button x:Name="ButtonStop" 
+                Grid.Row="4"
                     HorizontalAlignment="right"
                     VerticalAlignment="Bottom"
                     Content="stop"
                     Margin="10"
-                    Padding="10"/>
+                    Padding="10" Click="ButtonStop_Click"/>
 
         </Grid>
 
